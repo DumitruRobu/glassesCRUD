@@ -1,0 +1,304 @@
+body{
+   
+    background-color: rgb(40, 73, 89);
+}
+#den{
+    font-weight: 700;
+
+}
+
+#pret{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+ 
+}
+a:hover{
+    
+    color: white;
+    
+}
+
+
+
+
+#dcbd{
+    margin-top: 30px;
+}
+
+header{
+    gap:30px;
+    text-align: center;
+}
+
+#theHeader{
+    font-size: 25px;
+}
+
+img{
+    width: 300px;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.prdcts{
+    background-color: rgb(115 152 169);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    transition-duration: 0.25s;
+    
+    
+}
+
+
+
+.prdcts:hover{
+    background-color: rgb(76, 131, 157);
+    /* border: solid 1px black; */
+    cursor: pointer;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    font-size: 15px;
+}
+
+.prdcts:active{
+    transform: translateY(4px);
+}
+
+.mainDiv{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+#chiarOchelarii{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+   
+}
+
+#filtrulDeBrand{
+    padding-right: 30px
+}
+
+#parinte{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+
+}
+
+form input,
+form button,
+form select{
+    padding: 5px 10px;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+}
+
+form button{
+    background-color: rgb(115 152 169);
+    color:rgb(0, 0, 0)
+}
+
+form button:hover{
+    background-color:rgb(76, 131, 157);
+    color: white;
+}
+
+#filterByBrand{
+    width: 250px;
+    margin-left:0;
+}
+
+.error{
+    color: red;
+}
+form p{
+    text-align: left;
+}
+
+
+#success{
+    background: linear-gradient(45deg, #00f260, #0575e6);
+    padding: 15px 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: 6s;
+}
+
+#infoProdus{
+    font-size: 20px;
+}
+
+#infoProdus:hover{
+    color: white;
+}
+
+#abtProduct{
+    display: flex;
+    background-color: rgb(115 152 169);
+    width: 700px;
+    border-radius:  10px;
+    padding: 30px;
+    gap: 20px;
+
+}
+
+#imagineProdus{
+    width: 400px;
+}
+
+#linkulPtDelete{
+    font-size: 25px;
+}
+#aboutStore p{
+    font-size: 20px;
+}
+#aboutStore{
+    width:750px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.gallery{
+    display: grid;
+    
+    width: 1000px;
+    height:60vh;
+    margin: auto;
+    gap: 10px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-areas:
+     "B B B A A A A A C C C"
+     "B B B A A A A A C C C"
+     "D D E E E F F F G G G"
+     "D D E E E F F F G G G"
+     "J J E E E F F F G G G"
+     "J J E E E I I I H H H"
+     "J J K K K I I I H H H"
+     "J J K K K I I I H H H"
+     ;
+     
+}
+
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    
+}
+
+
+#prima{
+    grid-area: A;
+}
+#doi{
+    grid-area: B;
+}
+#trei{
+    grid-area: C;
+}
+#patru{
+    grid-area: D;
+}
+#cinci{
+    grid-area: E;
+}
+#sase{
+    grid-area: F;
+}
+#sapte{
+    grid-area: G;
+}
+#opt{
+    grid-area: H;
+}
+#noua{
+    grid-area: I;
+}
+#zece{
+    grid-area: J;
+}
+#unsprezece{
+    grid-area: K;
+}
+
+#shopNow{
+    font-size: 25px;
+
+}
+
+#logo{
+    margin-bottom: 20px;
+}
+
+
+
+.imgg img:hover{
+   
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    animation: efectDeHover 0.8s;
+}
+
+@keyframes efectDeHover{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  
